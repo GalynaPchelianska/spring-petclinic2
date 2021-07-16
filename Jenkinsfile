@@ -57,8 +57,7 @@ environment {
             steps {
                 echo "deploing ...."
                 ansiblePlaybook (
-                    playbook: '/opt/playbook/deploy.yml'
-                    inventory: '/opt/playbooks/hosts.ini'          
+                    playbook: '/opt/playbook/deploy.yml'       
                     )
             }
         }
