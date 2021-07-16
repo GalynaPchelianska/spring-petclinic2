@@ -56,6 +56,10 @@ environment {
         stage ('Deploy') {
             steps {
                 echo "deploing ...."
+                ansiblePlaybook (
+                    inventory: '/opt/playbooks'
+                    playbook: 'deploy.yml'                
+                    )
             }
         }
 
