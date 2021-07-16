@@ -57,7 +57,7 @@ environment {
             steps {
                 echo "deploing ...."
                 ansiblePlaybook (
-                    playbook: '/opt/playbook/deploy.yml'       
+                    playbook: '/opt/playbooks/deploy.yml'       
                     )
             }
         }
