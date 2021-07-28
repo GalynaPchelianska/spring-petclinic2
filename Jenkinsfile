@@ -55,9 +55,7 @@ environment {
         // Stage4 : Deploing
         stage ('Deploy') {
             steps {
-                echo "deploing ...."
-                ansiblePlaybook (
-                    playbook: '/opt/playbooks/deploy.yml'       
+                echo "deploing ...."  
                     )
             }
         }
