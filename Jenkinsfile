@@ -56,7 +56,6 @@ environment {
         stage ('Deploy') {
             steps {
                 echo "deploing ...."  
-                    )
             }
         }
 
