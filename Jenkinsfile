@@ -31,7 +31,7 @@ environment {
         }
    
        // Stage3 : Create artifact and Deploy the to Nexus
-        stage ('Deplot to Nexus'){
+        stage ('Deploy to Nexus'){
             steps {
                 script {
 
@@ -52,14 +52,5 @@ environment {
             }
                 } 
         
-        // Stage4 : Deploing
-        stage ('Deploy') {
-            steps {
-                echo "deploing ...."  
-            }
-        }
-
-
-    }
-
+           }
 }
